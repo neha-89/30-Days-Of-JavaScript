@@ -87,30 +87,26 @@ console.log(a>b ? `${a} is less than ${b}` :`${a} is less than ${b}`)
 //    - March, April or May, the season is Spring
 //    - June, July or August, the season is Summer
 
-function findSeason(month){
-    let arr1 = ['September', 'October' ,' November'];
-    let arr2 = ['December','January','February'];
-    let arr3 = ['March','April','May'];
-    let arr4 = ['June','July','August'];
-    let i,j,k,l;
-    switch(true){
-        case (month == arr1[i]):
-        console.log(`Winter`)
-        break
-        case (month == arr2[j]):
-        console.log(`Autumn`)
-        break
-        case (month == arr3[k]):
-        console.log(`Summer`)
-        break
-        case (month == arr4[l]):
-        console.log(`Spring`)
-        break
-        default:
-        console.log('rainy')
-    }
-}
-findSeason("July")
+// function findSeason(month){
+//    
+//     switch(true){
+//         case (month =='September' && month == 'October' && month == ' November'):
+//         console.log(`Winter`)
+//         break
+//         case (month =='December' && month == 'January' && month == ' February'):
+//         console.log(`Autumn`)
+//         break
+//         case (month =='March' && month == 'April' && month == 'May'):
+//         console.log(`Summer`)
+//         break
+//         case (month =='June' && month == 'July' && month == 'August'):
+//         console.log(`Spring`)
+//         break
+//         default:
+//         console.log('rainy')
+//     }
+// }
+//findSeason("July")
 // 1. Check if a day is weekend day or a working day. Your script will take day as an input.
 
 // ```sh
@@ -127,6 +123,15 @@ findSeason("July")
 //     Friday is a working day.
 //   ```
 
+// function findWeekDay(day){
+//     if(day == 'Saturday' && day == 'Sunday'){
+//         console.log("Day is a weekend");
+//     }
+//     else{
+//         console.log("It's a working day");
+//     }
+// }
+// findWeekDay('Monday');
 // ### Exercises: Level 3
 
 // 1. Write a program which tells the number of days in a month.
@@ -144,5 +149,24 @@ findSeason("July")
 //     Enter a month: FEbruary
 //     February has 28 days.
 //   ```
-
+function findDays(month){
+    let arr1 = ["January","March","May",'July',"August","October","December"];
+    let arr2 = ['April','June','September','November'];
+    
+    for(let i =0;i< arr1.length;i++){
+        if(month == arr1[i]){
+            console.log(`${month} has 31 days`);
+        }
+    }
+    for(let j =0;j< arr2.length;j++){
+        if(month == arr2[j]){
+            console.log(`${month} has 30 days`);
+        }
+    }
+    if(month == 'February'){
+        console.log(`${month} has 28 days`)
+    }
+    
+}
+findDays('July');
 // 1. Write a program which tells the number of days in a month, now consider leap year.
