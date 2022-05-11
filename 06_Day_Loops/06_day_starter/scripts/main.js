@@ -30,9 +30,9 @@
     //     console.log(i);
     // }
 // 2. Iterate 10 to 0 using for loop, do the same using while and do while loop
-    for(let i = 10;i>= 0 ;i--){
-        console.log(i);
-    }
+    // for(let i = 10;i>= 0 ;i--){
+    //     console.log(i);
+    // }
 // 3. Iterate 0 to n using for loop
 // 4. Write a loop that makes the following pattern using console.log():
 
@@ -45,15 +45,15 @@
 //        ######
 //        #######
 //    ```
-      let string = "";
-      for(let i = 0;i<= 7 ;i++){
-          for(let j=0;j<=i;j++){
-            string += "#";
-          }
-          string += "\n";
-        }
-        // printing the string
-        console.log(string);
+    //   let string = "";
+    //   for(let i = 0;i<= 7 ;i++){
+    //       for(let j=0;j<=i;j++){
+    //         string += "#";
+    //       }
+    //       string += "\n";
+    //     }
+    //     // printing the string
+    //     console.log(string);
     
 // 5. Use loop to print the following pattern:
 
@@ -90,11 +90,11 @@
 
 // 7. Use for loop to iterate from 0 to 100 and print only even numbers
 
-for(let i =0 ;i<= 100;i++){
-    if(i % 2 == 0){
-        console.log(i);
-    }
-}
+// for(let i =0 ;i<= 100;i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+//     }
+// }
 
 // 8. Use for loop to iterate from 0 to 100 and print only odd numbers
 // for(let i =0 ;i<= 100;i++){
@@ -162,16 +162,16 @@ for(let i =0 ;i<= 100;i++){
 
 // take input from the user
 
-let sum = 0;
+//let sum = 0;
 
 // looping from i = 1 to number
 // in each iteration, i is increased by 1
-for (let i = 1; i <= 100; i++) {
-    if(i % 2 !== 0)
-    sum += i;
-}
+// for (let i = 1; i <= 100; i++) {
+//     if(i % 2 !== 0)
+//     sum += i;
+// }
 
-console.log('The sum of odd numbers:', sum);
+// console.log('The sum of odd numbers:', sum);
 
 // 12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
@@ -180,8 +180,21 @@ console.log('The sum of odd numbers:', sum);
 //     ```
 
 // 13. Develop a small script which generate array of 5 random numbers
-    console.log(Math.floor(Math.random(0) *5))
+let arr = [];
+for(let i=1;i<=5;i++){
+    let value = Math.floor((Math.random(i)*5)+ 1);
+    arr.push(value);
+    console.log(value);
+   }
+   console.log(arr);
+
+
 // 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
+// let arr = [];
+// for(let i=1;i<=5;i++){
+//     let value = Math.floor(Math.random(i));
+//     arr.push(value);
+// }
 // 15. Develop a small script which generate a six characters random id:
 
 //     ```sh
