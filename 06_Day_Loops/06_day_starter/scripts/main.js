@@ -180,23 +180,40 @@
 //     ```
 
 // 13. Develop a small script which generate array of 5 random numbers
-let arr = [];
-for(let i=1;i<=5;i++){
-    let value = Math.floor((Math.random(i)*5)+ 1);
-    arr.push(value);
-    console.log(value);
-   }
-   console.log(arr);
+// let arr = [];
+// for(let i=1;i<=5;i++){
+//     let value = Math.floor((Math.random(i)*5)+ 1);
+//     arr.push(value);
+//     console.log(value);
+//    }
+//    console.log(arr);
 
 
 // 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
-// let arr = [];
-// for(let i=1;i<=5;i++){
-//     let value = Math.floor(Math.random(i));
-//     arr.push(value);
-// }
+   let arr = [];
+   for(let i=1;i<=5;i++){
+    var add = true;
+    let value = Math.floor((Math.random(i)*5)+ 1);
+   for(let j=0 ; j<= arr.length;i++){
+       if(arr[j] == i){
+        add = false;
+       }
+   }
+   if(add){
+    arr.push(value);
+    console.log(value);
+   }
+   else{
+       i--;
+   }
+   console.log(arr);
+  }
 // 15. Develop a small script which generate a six characters random id:
-
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+    for(let i=0 ;i<=6;i++){
+        let value = Math.floor((Math.random(i)*5)+1);
+        
+    }
 //     ```sh
 //     5j2khz
 //     ```
