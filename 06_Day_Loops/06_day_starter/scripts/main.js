@@ -97,30 +97,81 @@ for(let i =0 ;i<= 100;i++){
 }
 
 // 8. Use for loop to iterate from 0 to 100 and print only odd numbers
-for(let i =0 ;i<= 100;i++){
-    if(i % 2 !== 0){
-        console.log(i);
-    }
-}
+// for(let i =0 ;i<= 100;i++){
+//     if(i % 2 !== 0){
+//         console.log(i);
+//     }
+// }
 
 // 9. Use for loop to iterate from 0 to 100 and print only prime numbers
-for(let i =0 ;i<= 100;i++){
-    if(i % 2 == 0){
-        console.log(i);
-    }
-}
+// for(let i =0 ;i<= 100;i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+//     }
+// }
 
 // 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 
 //     ```sh
 //     The sum of all numbers from 0 to 100 is 5050.
-//     ```
+// 
+  
+// for(let i =1 ;i<= 100;i++){
+  
+//     let sum =+ i;
+//     console.log(sum);
+// }
+// program to display the sum of natural numbers
+
+// take input from the user
+
+
+let sum = 0;
+
+// looping from i = 1 to number
+// in each iteration, i is increased by 1
+for (let i = 0; i <= 100; i++) {
+    sum += i;
+}
+
+console.log('The sum of natural numbers:', sum);
+
+
+
 
 // 11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+    // program to display the sum of natural numbers
+
+// take input from the user
+
+
+let sum = 0;
+
+// looping from i = 1 to number
+// in each iteration, i is increased by 1
+for (let i = 1; i <= number; i++) {
+    if(i % 2 == 0)
+    sum += i;
+}
+
+console.log('The sum of natural numbers:', sum);
 
 //     ```sh
 //     The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
-//     ```
+//     ```// program to display the sum of natural numbers
+
+// take input from the user
+
+let sum = 0;
+
+// looping from i = 1 to number
+// in each iteration, i is increased by 1
+for (let i = 1; i <= number; i++) {
+    if(i % 2 != 0)
+    sum += i;
+}
+
+console.log('The sum of natural numbers:', sum);
 
 // 12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
