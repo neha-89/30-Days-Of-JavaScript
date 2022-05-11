@@ -126,15 +126,15 @@ for(let i =0 ;i<= 100;i++){
 // take input from the user
 
 
-let sum = 0;
+// let sum = 0;
 
 // looping from i = 1 to number
 // in each iteration, i is increased by 1
-for (let i = 0; i <= 100; i++) {
-    sum += i;
-}
+// for (let i = 0; i <= 100; i++) {
+//     sum += i;
+// }
 
-console.log('The sum of natural numbers:', sum);
+// console.log('The sum of natural numbers:', sum);
 
 
 
@@ -145,16 +145,16 @@ console.log('The sum of natural numbers:', sum);
 // take input from the user
 
 
-let sum = 0;
+//let sum = 0;
 
 // looping from i = 1 to number
 // in each iteration, i is increased by 1
-for (let i = 1; i <= number; i++) {
-    if(i % 2 == 0)
-    sum += i;
-}
+// for (let i = 1; i <= 100; i++) {
+//     if(i % 2 == 0)
+//     sum += i;
+// }
 
-console.log('The sum of natural numbers:', sum);
+// console.log('The sum of even numbers:', sum);
 
 //     ```sh
 //     The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
@@ -166,12 +166,12 @@ let sum = 0;
 
 // looping from i = 1 to number
 // in each iteration, i is increased by 1
-for (let i = 1; i <= number; i++) {
-    if(i % 2 != 0)
+for (let i = 1; i <= 100; i++) {
+    if(i % 2 !== 0)
     sum += i;
 }
 
-console.log('The sum of natural numbers:', sum);
+console.log('The sum of odd numbers:', sum);
 
 // 12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
@@ -180,6 +180,7 @@ console.log('The sum of natural numbers:', sum);
 //     ```
 
 // 13. Develop a small script which generate array of 5 random numbers
+    console.log(Math.floor(Math.random(0) *5))
 // 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
 // 15. Develop a small script which generate a six characters random id:
 
