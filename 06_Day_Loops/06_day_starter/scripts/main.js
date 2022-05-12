@@ -1,16 +1,4 @@
-// const countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-//   ]
+
 
 //   const webTechs = [
 //     'HTML',
@@ -191,29 +179,29 @@
 
 // 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
    let arr = [];
-   for(let i=1;i<=5;i++){
-    var add = true;
-    let value = Math.floor((Math.random(i)*5)+ 1);
-   for(let j=0 ; j<= arr.length;i++){
-       if(arr[j] == i){
-        add = false;
-       }
-   }
-   if(add){
-    arr.push(value);
-    console.log(value);
-   }
-   else{
-       i--;
-   }
-   console.log(arr);
-  }
+//    for(let i=1;i<=5;i++){
+//     var add = true;
+//     let value = Math.floor((Math.random(i)*5)+ 1);
+//    for(let j=0 ; j<= arr.length;i++){
+//        if(arr[j] == i){
+//         add = false;
+//        }
+//    }
+//    if(add){
+//     arr.push(value);
+//     console.log(value);
+//    }
+//    else{
+//        i--;
+//    }
+//    console.log(arr);
+//   }
 // 15. Develop a small script which generate a six characters random id:
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
-    for(let i=0 ;i<=6;i++){
-        let value = Math.floor((Math.random(i)*5)+1);
-        
-    }
+    // const characters = 'abcdefghijklmnopqrstuvwxyz1234567890';
+    // for(let i=0 ;i<=5;i++){
+    //     let value = characters.charAt(Math.floor((Math.random(i)*36)+1));
+    //     console.log(value);
+    // }
 //     ```sh
 //     5j2khz
 //     ```
@@ -221,7 +209,17 @@
 // ### Exercises: Level 2
 
 // 1. Develop a small script which generate any number of characters random id:
-
+        let characters = 'abcdefghjiklmnopqrstuvwxyz0123456789';
+        let charactersLength = characters.length;
+       
+        function randomCharacters(length){
+            for(let i= 0;i<=length;i++){
+                let value = characters.charAt(Math.floor(Math.random(i)*charactersLength));
+                return value;
+            }
+            return value;
+        }
+        console.log(randomCharacters(5));
 //     ```sh
 //       fe3jo1gl124g
 //     ```
@@ -243,13 +241,55 @@
 //     ```
 
 // 1. Using the above countries array, create the following new array.
-
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+  let array = [];
+  let array1= [];
+  for(let i = 0 ;i<countries.length;i++){
+      array.push(countries[i].toUpperCase());
+      let value = countries[i].length;
+      array1.push(value);
+      console.log(value);
+    }
+    console.log(array);
+    console.log(array1);
+  
 //     ```sh
 //     ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 //     ```
 
 // 1. Using the above countries array, create an array for countries length'.
-
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+//   ]
+//     let array1 = [];
+//     for(let j=0;j<=countries.length;j++){
+//         console.log(countries[j]);
+//         let value = countries[j].length;
+//         array1.push(value);
+//     }
+//     console.log(array1);
 //     ```sh
 //     [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
 //     ```
