@@ -178,7 +178,7 @@
 
 
 // 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
-   let arr = [];
+   //let arr = [];
 //    for(let i=1;i<=5;i++){
 //     var add = true;
 //     let value = Math.floor((Math.random(i)*5)+ 1);
@@ -241,29 +241,29 @@
 //     ```
 
 // 1. Using the above countries array, create the following new array.
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
-  let array = [];
-  let array1= [];
-  for(let i = 0 ;i<countries.length;i++){
-      array.push(countries[i].toUpperCase());
-      let value = countries[i].length;
-      array1.push(value);
-      console.log(value);
-    }
-    console.log(array);
-    console.log(array1);
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+//   ]
+//   let array = [];
+//   let array1= [];
+//   for(let i = 0 ;i<countries.length;i++){
+//       array.push(countries[i].toUpperCase());
+//       let value = countries[i].length;
+//       array1.push(value);
+//       console.log(value);
+//     }
+//     console.log(array);
+//     console.log(array1);
   
 //     ```sh
 //     ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
@@ -295,6 +295,69 @@ const countries = [
 //     ```
 
 // 1. Use the countries array to create the following array of arrays:
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+ 
+
+
+// function checkString(country) {
+//   if (country.include('land'))
+//     return country;
+//   else
+//     return false;
+// }
+// let string = countries.filter(checkString);
+// console.log(strings);
+    // let arr = [];
+    //  for(let i = 0;i<=countries.length;i++){
+    //    // let country1 = countries.toString();
+    //     let string=countries[i];
+    //     console.log(string); 
+    //     //let value =string.includes('land')
+    //     if( value ===string.includes('land')){
+    //         arr.push(string);
+            
+    //     } 
+    //     // let value = country1.includes('land');
+    //     // let value1  = country1.match('land');
+    //     // console.log(value1);
+    //     //console.log(country1.split(','));
+       
+    //  }
+    //  console.log(arr);
+     
+    
+    // let newArr = [];
+    
+    // for(let i=0; i<= countries.length; i++) {
+    
+    // for(let j=0; j<=countries[i].length; j++){
+    
+    // if(countries[i].includes('land') ){
+    
+    // newArr.push(countries[i]);
+    // break;
+    
+    // } 
+    
+    
+    // }
+    
+    // } 
+    // console.log(newArr);
+    
+
 
 //     ```sh
 //       [
@@ -331,12 +394,37 @@ const countries = [
 //       ```
 
 // 5. Using the above countries array, find the country containing only 5 characters.
-
+    let arr2 = []
+    for(let i=0;i<= countries.length;i++){
+        if(countries[i].length === 5){
+            arr2.push(countries[i]);
+        }
+        console.log(arr2);
+    }
 //     ```sh
 //     ['Japan', 'Kenya']
 //     ```
 
 // 6. Find the longest word in the webTechs array
+  const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ]
+   let word = [];
+   for(let i=0;i<=webTechs.length;i++){
+      let value = webTechs[i].length;
+      //console.log(value);
+      word.push(value);
+      console.log(word);
+      word.sort();
+      console.log(word.pop());
+   }
+
 // 7. Use the webTechs array to create the following array of arrays:
 
 //     ```sh
